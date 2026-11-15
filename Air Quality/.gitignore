@@ -1,0 +1,31 @@
+__pycache__/
+*.pyc
+.streamlit/secrets.toml
+
+# The app uses the city series. Station files are not part of the decision.
+raw_data/stations.csv
+raw_data/station_day.csv
+raw_data/station_hour.csv
+cleaned files/stations.csv
+cleaned files/station_day.csv
+cleaned files/station_hour.csv
+model/csv/dim_station.csv
+model/csv/fact_station_day.csv
+model/csv/fact_station_hour.csv
+
+# Over GitHub's 100 MB file limit, and not read by the app.
+model/air_quality.db
+
+# Near the 100 MB limit. The app reads cleaned files/city_hour.csv instead.
+model/csv/fact_city_hour.csv
+
+# Earlier boardroom app. The portfolio app is app.py at the project root.
+dashboard/
+
+# Exploratory scripts. The pillars are the clustering, season, hour, and year-over-year scripts.
+analysis/city_aqi_all_cities.py
+analysis/city_aqi_pm25_comparison.py
+analysis/city_outliers.py
+analysis/city_outlier_inference.py
+analysis/delhi_daily_vs_rolling.py
+
